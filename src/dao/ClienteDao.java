@@ -1,13 +1,9 @@
 package dao;
 
 import java.util.List;
-
 import javax.persistence.EntityManager;
-import javax.persistence.NoResultException;
 import javax.persistence.Query;
-
 import entidade.Cliente;
-import entidade.Usuario;
 import util.JpaUtil;
 
 public class ClienteDao {

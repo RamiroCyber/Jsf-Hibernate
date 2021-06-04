@@ -28,7 +28,7 @@ public class ClienteBean {
 	private String pesquisa;
 
 	public String salvar() {
-		cliente = ClienteDao.merge(cliente);
+		ClienteDao.salvar(cliente);
 		FacesContext.getCurrentInstance().addMessage(null,
 				new FacesMessage(FacesMessage.SEVERITY_INFO, "Status", "SUCESSO!"));
 		return null;
